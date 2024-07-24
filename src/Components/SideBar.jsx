@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { TbLayoutSidebarInactive } from "react-icons/tb";
 import { TbLayoutSidebarFilled } from "react-icons/tb";
-import { Tooltip } from 'react-tooltip';
 import { GrCircleQuestion } from "react-icons/gr"
 import { RiLogoutBoxLine } from "react-icons/ri";
 

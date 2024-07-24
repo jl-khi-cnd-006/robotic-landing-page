@@ -1,5 +1,3 @@
-import "./App.css";
-import Navbar from "./Components/Navbar";
 import ChatScreen from "./Pages/ChatScreen";
 import Home from "./Pages/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
