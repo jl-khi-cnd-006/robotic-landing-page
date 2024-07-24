@@ -1,9 +1,16 @@
 import React from 'react'
 import SideNotifications from '../Components/SideNotifications'
+import { useNavigate } from 'react-router-dom'
+import Navbar from '../Components/Navbar';
 
 const Home = () => {
+
+  const navigate = useNavigate();
+  
   return (
-    <div className='flex justify-center items-center h-full'>
+    <div>
+      <Navbar />
+    <div className='flex justify-center items-center h-screen'>
       <div className='h-full w-full flex md:flex-row justify-evenly items-center flex-col'>
         <div className="flex flex-col items-start space-y-8 text-2xl w-[500px]">
           <div className="space-y-2">
@@ -25,11 +32,12 @@ const Home = () => {
             </p>
           </div>
           <div class="container">
-            <button className="button "> Chat with AI </button>
+            <button className="button " onClick={() => navigate('/chat')}> Chat with AI </button>
           </div>
         </div>
         <div> <SideNotifications /></div>
       </div>
+    </div>
     </div>
   )
 }
