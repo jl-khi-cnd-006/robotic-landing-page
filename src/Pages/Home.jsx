@@ -2,6 +2,7 @@ import React from 'react'
 import SideNotifications from '../Components/SideNotifications'
 import { useNavigate } from 'react-router-dom'
 import Navbar from '../Components/Navbar';
+import { Meteors } from '../Components/Meteors';
 
 const Home = () => {
 
@@ -35,8 +36,12 @@ const Home = () => {
             <button className="button " onClick={() => navigate('/chat')}> Chat with AI </button>
           </div>
         </div>
-        <div> <SideNotifications /></div>
+        <div> <SideNotifications /></div> 
+
       </div>
+      <div className="absolute h-full w-full ">
+      <Meteors number={6} />
+    </div>
     </div>
     </div>
   )
